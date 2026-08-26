@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta AMINE="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    
+<div id="particles"></div>
+    <!-- BACKGROUND -->
+    <div class="background"></div>
+
+
+    <!-- ENTER SCREEN -->
+    <div class="enter-screen" id="enterScreen">
+
+        <div class="enter-box">
+
+            <h1>WELCOME</h1>
+
+            <p>Click to enter</p>
+
+            <button id="enterButton">
+                ENTER
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- MAIN WEBSITE -->
+    <main class="container" id="website">
+
+
+        <!-- PROFILE -->
+        <section class="profile-card">
+
+            <img
+                src="profile.jpg"
+                class="profile-image"
+                alt="Profile"
+            >
+
+            <h1>AMINE</h1>
+
+            <p class="bio">
+                Welcome to my personal website
+            </p>
+
+            <p class="location">
+                📍 Algeria
+            </p>
+
+
+            <!-- DISCORD CARD -->
+            <div class="discord-card">
+
+                <img
+
+
+
+
+                    src="discord.jpg"
+                    class="discord-avatar"
+                    alt="Discord"
+                >
+
+                <div class="discord-info">
+
+                    <div class="discord-AMINE">
+                        Discord Amine  !
+                    </div>
+
+                    <p>Online</p>
+
+                </div>
+
+                <div class="discord-image"></div>
+
+            </div>
+
+
+   <!-- SOCIAL BUTTONS -->
+<div class="socials">
+
+    <a href="https://www.tiktok.com/@username"
+       target="_blank"
+       class="social">
+
+        <img src="tiktok.PNG" alt="TikTok">
+
+    </a>
+
+    <a href="https://discord.gg/YourInvite"
+       target="_blank"
+       class="social">
+
+        <img src="discord.jpg" alt="Discord">
+
+    </a>
+
+    <a href="https://steamcommunity.com/id/YourName"
+       target="_blank"
+       class="social">
+
+        <img src="instagram.PNG" alt="Steam">
+
+    </a>
+
+</div>
+            <!-- VIEWS -->
+            <div class="views">
+
+                👁 <span id="views">0</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- MUSIC PLAYER -->
+        <section class="music-player">
+
+            <img
+                src="music.jpg"
+                class="music-cover"
+                alt="Music"
+            >
+
+            <div class="music-info">
+
+                <h3>MUSIC 🦋</h3>
+
+                <div class="player-row">
+
+                    <span id="currentTime">
+                        0:00
+                    </span>
+
+                    <input
+                        type="range"
+                        id="progress"
+                        value="0"
+                    >
+
+                    <span id="duration">
+                        0:00
+                    </span>
+
+                    <button id="playButton">
+                        ▶
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+<!-- DISCORD SERVER -->
+<section class="discord-section">
+
+    <div class="section-line">
+        <span>DISCORD SERVER</span>
+    </div>
+
+    <div class="server-card">
+
+        <img
+            id="serverIcon"
+            class="server-icon"
+            src="profile.png"
+            alt="Discord Server"
+        >
+
+        <div class="server-info">
+
+            <h2 id="serverName">
+                Loading...
+            </h2>
+
+            <p>
+                <span class="online-dot"></span>
+
+                <span id="onlineCount">0</span> Online
+
+                <span class="separator">•</span>
+
+                <span id="memberCount">0</span> Members
+            </p>
+
+        </div>
+
+        <a
+            href="https://discord.gg/FhjyWQnkJH"
+            target="_blank"
+            class="join-button"
+        >
+            Join
+        </a>
+
+    </div>
+
+</section>
+    </main>
+
+
+    <!-- AUDIO -->
+    <audio id="audio" loop>
+
+        <source
+            src="music.mp3"
+            type="audio/mpeg"
+        >
+
+    </audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+
+<video autoplay muted loop playsinline class="video-background">
+    <source src="background.mp4" type="video/mp4">
+</video>
+
+</html>
